@@ -1,5 +1,5 @@
 ﻿/*
-Copyright (c) 2003-2012, CKSource - Frederico Knabben. All rights reserved.
+Copyright (c) 2003-2013, CKSource - Frederico Knabben. All rights reserved.
 For licensing, see LICENSE.html or http://ckeditor.com/license
 */
 
@@ -31,7 +31,8 @@ CKEDITOR.lang['uk'] =
 	 * Screenreader titles. Please note that screenreaders are not always capable
 	 * of reading non-English words. So be careful while translating it.
 	 */
-	editorTitle : 'Текстовий редактор, %1, натисніть ALT 0 для довідки.',
+	editorTitle : 'Текстовий редактор, %1',
+	editorHelp : 'натисніть ALT 0 для довідки',
 
 	// ARIA descriptions.
 	toolbars	: 'Панель інструментів редактора',
@@ -119,6 +120,7 @@ CKEDITOR.lang['uk'] =
 		alignTop		: 'По верхньому краю',
 		alignMiddle		: 'По середині',
 		alignBottom		: 'По нижньому краю',
+		invalidValue	: 'Invalid value.', // MISSING
 		invalidHeight	: 'Висота повинна бути цілим числом.',
 		invalidWidth	: 'Ширина повинна бути цілим числом.',
 		invalidCssLength	: 'Значення, вказане для "%1" в полі повинно бути позитивним числом або без дійсного виміру CSS блоку (px, %, in, cm, mm, em, ex, pt, or pc).',
@@ -696,7 +698,7 @@ CKEDITOR.lang['uk'] =
 		ignoreAll		: 'Пропустити всі',
 		addWord			: 'Додати слово',
 		emptyDic		: 'Назва словника повинна бути вказана.',
-
+		noSuggestions	: 'Немає варіантів',
 		optionsTab		: 'Опції',
 		allCaps			: 'Пропустити прописні слова',
 		ignoreDomainNames : 'Пропустити доменні назви',

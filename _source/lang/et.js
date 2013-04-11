@@ -1,5 +1,5 @@
 ﻿/*
-Copyright (c) 2003-2012, CKSource - Frederico Knabben. All rights reserved.
+Copyright (c) 2003-2013, CKSource - Frederico Knabben. All rights reserved.
 For licensing, see LICENSE.html or http://ckeditor.com/license
 */
 
@@ -31,7 +31,8 @@ CKEDITOR.lang['et'] =
 	 * Screenreader titles. Please note that screenreaders are not always capable
 	 * of reading non-English words. So be careful while translating it.
 	 */
-	editorTitle : 'Rikkalik tekstiredaktor %1, abi jaoks vajuta ALT 0.',
+	editorTitle : 'Vormindatud teksti redaktor %1',
+	editorHelp : 'Abi saamiseks vajuta ALT 0',
 
 	// ARIA descriptions.
 	toolbars	: 'Redaktori tööriistaribad',
@@ -119,6 +120,7 @@ CKEDITOR.lang['et'] =
 		alignTop		: 'Üles',
 		alignMiddle		: 'Keskele',
 		alignBottom		: 'Alla',
+		invalidValue	: 'Invalid value.', // MISSING
 		invalidHeight	: 'Kõrgus peab olema number.',
 		invalidWidth	: 'Laius peab olema number.',
 		invalidCssLength	: '"%1" välja jaoks määratud väärtus peab olema positiivne täisarv CSS ühikuga (px, %, in, cm, mm, em, ex, pt või pc) või ilma.',
@@ -696,7 +698,7 @@ CKEDITOR.lang['et'] =
 		ignoreAll		: 'Eira kõiki',
 		addWord			: 'Lisa sõna',
 		emptyDic		: 'Sõnaraamatu nimi ei tohi olla tühi.',
-
+		noSuggestions	: 'No suggestions', // MISSING
 		optionsTab		: 'Valikud',
 		allCaps			: 'Läbivate suurtähtedega sõnade eiramine',
 		ignoreDomainNames : 'Domeeninimede eiramine',
