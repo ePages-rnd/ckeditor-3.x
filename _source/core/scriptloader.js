@@ -16,7 +16,8 @@ For licensing, see LICENSE.html or http://ckeditor.com/license
 CKEDITOR.scriptLoader = (function()
 {
 	var uniqueScripts = {},
-		waitingList = {};
+		waitingList = {},
+		require = CKEDITOR.amd.require;
 
 	return /** @lends CKEDITOR.scriptLoader */ {
 		/**
@@ -79,6 +80,19 @@ CKEDITOR.scriptLoader = (function()
 			if ( scriptCount === 0 )
 			{
 				doCallback( true );
+				return;
+			}
+
+			if ( require )
+			{
+				var completeCallback = function ()
+				{
+					showBusy && CKEDITOR.document.getDocumentElement().removeStyle( 'cursor' );
+					doCallback(true);
+				};
+
+				completed = [].concat(scriptUrl);
+				require(scriptUrl, completeCallback);
 				return;
 			}
 

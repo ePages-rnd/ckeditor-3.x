@@ -158,6 +158,29 @@ if ( !window.CKEDITOR )
 
 				return path;
 			})(),
+			
+			/**
+			 * Support AMD script loader if manually provided.
+			 * It is possible to manually provide the define method by setting a global method named CKEDITOR_AMD_DEFINE.
+			 * It is possible to manually provide the require method by setting a global method named CKEDITOR_AMD_REQUIRE.
+			 * This global methods must be set <strong>before</strong> the editor script loading.
+			 * @type Object
+			 */
+			amd: (function () {
+				var amd = {};
+				
+				if (typeof CKEDITOR_AMD_DEFINE === "function")
+				{
+					amd.define = CKEDITOR_AMD_DEFINE;
+				}
+				
+				if (typeof CKEDITOR_AMD_REQUIRE === "function")
+				{
+					amd.require = CKEDITOR_AMD_REQUIRE;
+				}
+				
+				return amd;
+			})(),
 
 			/**
 			 * Gets the full URL for CKEditor resources. By default, URLs
