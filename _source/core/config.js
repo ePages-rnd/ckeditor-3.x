@@ -1,5 +1,5 @@
 ﻿/*
-Copyright (c) 2003-2012, CKSource - Frederico Knabben. All rights reserved.
+Copyright (c) 2003-2013, CKSource - Frederico Knabben. All rights reserved.
 For licensing, see LICENSE.html or http://ckeditor.com/license
 */
 
@@ -323,20 +323,20 @@ CKEDITOR.config =
 		'resize,' +
 		'save,' +
 		'scayt,' +
-		'smiley,' +
 		'showblocks,' +
 		'showborders,' +
+		'smiley,' +
 		'sourcearea,' +
+		'specialchar,' +
 		'stylescombo,' +
+		'tab,' +
 		'table,' +
 		'tabletools,' +
-		'specialchar,' +
-		'tab,' +
 		'templates,' +
 		'toolbar,' +
 		'undo,' +
-		'wysiwygarea,' +
-		'wsc',
+		'wsc,' +
+		'wysiwygarea',
 
 	/**
 	 * A list of additional plugins to be loaded. This setting makes it easier
